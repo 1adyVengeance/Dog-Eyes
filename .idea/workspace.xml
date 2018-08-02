@@ -1,13 +1,855 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75211c47-c8b3-40b6-914a-09b69a921ea8" name="Default" comment="" />
+    <list default="true" id="75211c47-c8b3-40b6-914a-09b69a921ea8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/shop_admin/main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/main/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/main/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/main/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/main/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/main/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/main/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/lang/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/WdatePicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/datePicker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/default/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/default/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/twoer/datepicker-dev.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/twoer/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/twoer/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/twoer/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/My97DatePicker/skin/whyGreen/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/Validform/5.3.2/Validform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/Validform/5.3.2/Validform.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/Validform/5.3.2/passwordStrength-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/datatables/1.10.0/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/icheck.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/jquery.icheck.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/minimal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/icheck/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/cancel_upload.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/handlers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/swfupload.cookies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/swfupload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/swfupload.proxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/swfupload.queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/swfupload.speed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/swfupload.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/swfupload_fp9.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/swfupload/upload-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/ASPJson.class.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/MultiformProcessor.class.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/PathFormatter.class.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/Uploader.Class.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/action_config.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/action_crawler.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/action_list.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/action_upload.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/config_loader.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/asp/controller.asp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/anchor/anchor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/attachment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/attachment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/alignicon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/alignicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/file-icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/file-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/attachment/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/background/background.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/background/background.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/background/background.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/background/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/background/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/chart.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/charts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/images/charts0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/images/charts1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/images/charts2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/images/charts3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/images/charts4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/charts/images/charts5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/emotion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/emotion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/emotion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/bface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/cface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/fface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/jxface2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/tface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/wface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/emotion/images/yface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/gmap/gmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/help/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/help/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/help/help.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/image.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/images/alignicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/image/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/insertframe/insertframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/internal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/link/link.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/map/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/map/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/music/music.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/music/music.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/music/music.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/preview/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/addimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/brush.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/delimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/delimgH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/emptyH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/redoH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/scaleH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/size.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/images/undoH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/scrawl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/scrawl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/scrawl/scrawl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/searchreplace/searchreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/searchreplace/searchreplace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/snapscreen/snapscreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/spechars/spechars.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/spechars/spechars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/table/dragicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/table/edittable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/table/edittable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/table/edittable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/table/edittd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/table/edittip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/images/pre0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/images/pre1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/images/pre2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/images/pre3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/images/pre4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/template/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/center_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/file-icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/file-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/left_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/none_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/right_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/video/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/webapp/webapp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/wordimage/imageUploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/wordimage/tangram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/wordimage/wordimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/dialogs/wordimage/wordimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/controller.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/lib/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/lib/json.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/lib/ueditor-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/ActionEnter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/ConfigManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/Encoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/PathFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/ActionMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/ActionState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/AppInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/BaseState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/FileType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/MIMEType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/MultiState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/define/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/hunter/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/hunter/ImageHunter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/Base64Uploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/BinaryUploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/StorageManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/jsp/src/com/baidu/ueditor/upload/Uploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/addimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/deletedisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/deleteenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/listbackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/localimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/rotateleftdisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/rotateleftenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/rotaterightdisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/rotaterightenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/en/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/zh-cn/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/zh-cn/images/localimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/zh-cn/images/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/zh-cn/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/App_Code/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/App_Code/ConfigHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/App_Code/CrawlerHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/App_Code/Handler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/App_Code/ListFileHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/App_Code/NotSupportedHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/App_Code/PathFormater.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/App_Code/UploadHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/Bin/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/Bin/Newtonsoft.Json.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/Bin/Newtonsoft.Json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/Web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/controller.ashx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/net/net.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/php/Uploader.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/php/action_crawler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/php/action_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/php/action_upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/php/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/php/controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/css/ueditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/css/ueditor.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/dialogbase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/anchor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/arrow_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/arrow_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/button-bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/cancelbutton.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/charts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/cursor_h.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/cursor_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/cursor_v.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/cursor_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/dialog-title-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/filescan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/highlighted.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/icons-all.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/loaderror.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/lock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/pagebreak.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/sortable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/sparator_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/table-cell-align.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/tangram-colorpicker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/toolbar_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/unhighlighted.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/videologo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/word.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/default/images/wordpaste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/themes/iframe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/highcharts-more.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/highcharts.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/annotations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/data.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/drilldown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/exporting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/funnel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/heatmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/map.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/themes/dark-green.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/themes/gray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/themes/grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/highcharts/themes/skies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/jquery-1.10.2.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/font/vjs.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/font/vjs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/font/vjs.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/font/vjs.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/video-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/video-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/video-js.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/video.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/video-js/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/Uploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/ueditor.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/ueditor.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/ueditor.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/ueditor.parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/ueditor/1.4.3/ueditor.parse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/Uploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/cropper/cropper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/cropper/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/cropper/uploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/expressInstall.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/image-upload/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/image-upload/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/images/icons.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/images/progress.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/md5-demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/md5-demo/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/requirejs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/requirejs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/requirejs/require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/server/crossdomain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/server/fileupload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/server/fileupload2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/server/preview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.fis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.noimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.noimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.nolog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.nolog.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/webuploader/0.1.5/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/1_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/1_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/diy/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/css/zTreeStyle/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/js/jquery.ztree.all-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/js/jquery.ztree.core-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/js/jquery.ztree.excheck-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/js/jquery.ztree.exedit-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/Widget/zTree/js/jquery.ztree.exhide-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/avatar1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/avatar4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/profile-pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/avatars/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/ace-ie.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/ace-rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/ace-skins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/ace.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/bootstrap-editable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/bootstrap-timepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/chosen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/colorbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/colorpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/dropzone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/echartsHome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/font-awesome-ie7.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/jquery-ui-1.10.3.custom.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/jquery-ui-1.10.3.full.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/jquery.gritter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/css/ui.jqgrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/bar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/chord.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/eventRiver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/force.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/funnel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/gauge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/heatmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/k.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/line.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/radar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/scatter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/treemap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/venn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/chart/wordCloud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/echarts-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/theme/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/theme/infographic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/dist/theme/macarons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/font/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/font/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/font/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/font/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/font/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/font/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/ace-elements.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/ace-extra.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/ace.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/bootbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/bootstrap-colorpicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/bootstrap-tag.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/bootstrap-wysiwyg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/chosen.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/date-time/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/date-time/bootstrap-timepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/date-time/daterangepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/date-time/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/dropzone.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/flot/jquery.flot.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/flot/jquery.flot.pie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/flot/jquery.flot.resize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/fuelux/data/fuelux.tree-sampledata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/fuelux/fuelux.spinner.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/fuelux/fuelux.tree.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/fuelux/fuelux.wizard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jqGrid/i18n/grid.locale-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jqGrid/jquery.jqGrid.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery-2.0.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery-ui-1.10.3.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery-ui-1.10.3.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.autosize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.colorbox-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.easy-pie-chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.gritter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.hotkeys.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.inputlimiter.1.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.knob.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.maskedinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.mobile.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.nestable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.sparkline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.ui.touch-punch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/markdown/bootstrap-markdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/markdown/markdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/typeahead-bs2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/x-editable/ace-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/js/x-editable/bootstrap-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/laydate/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/laydate/need/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/laydate/skins/dahong/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/laydate/skins/dahong/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/laydate/skins/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/laydate/skins/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/laydate/skins/molv/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/laydate/skins/molv/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/extend/layer.ext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/skin/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/assets/layer/skin/layer.ext.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/css/easyui_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/font/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/font/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/font/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/font/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/font/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/font/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/font/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/font/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/a2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/ban1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/ban2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/detailnoimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon-ad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon-addp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon-addwz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon-cpgl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon-grxx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon-gwcc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon-wz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon_error_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon_right_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/icon_warning_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/indexhead_sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/login_bgx.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/login_m_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/loginbg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/loginbg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/loginbg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/meiyou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/r1_c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/renz-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/star-off-big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/star-on-big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/xdt_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/xtbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/images/xtsz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/H-ui.admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/H-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/displayPart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/dragDivResize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/easyloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/easyui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/html5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/jquery-1.9.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/jquery.SuperSlide.2.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/jquery.easyui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/jquery.nicescroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/jquery.raty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/lrtk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/js/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/ad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/ad1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/ad2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/ad3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/14373828.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/14373886.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/14384098.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/14390003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/14391940.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/black9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/caifut.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/citi-bank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/unionpay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/weixin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/yinglian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/yozhif.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/black/zhifb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/cp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/1089.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/1145.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/1208.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/1252.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/1270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/1309.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/1396.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/152.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/156.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/1663.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/199.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/245.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/339.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/42.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/458.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/6116.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/618.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/644.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/690.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/740.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/741.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/logo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/logo/logo2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_42.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_44.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_46.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_56.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_58.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_65.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_67.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_68.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/p_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/static/Admin/products/分组.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Account_Details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Add_Brand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Ads_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Amounts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Brand_Manage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Brand_detailed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Category_Manage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Competence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Cover_management.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Feedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Guestbook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Order_Chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Order_handling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Orderform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Payment_Configure.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Payment_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Products_List.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Refund.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Refund_detailed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Shop_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Shops_Audit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Sort_ads.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/System_Logs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/System_section.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/Systems.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/admin_Competence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/admin_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/administrator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/advertising.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/article_Sort.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/article_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/article_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/integration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/member-Grading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/member-show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/order_detailed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/payment_method.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/picture-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/product-category-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/shopping_detailed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/transaction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop_admin/templates/Admin/user_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Dog-Eyes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dog-Eyes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_admin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_admin/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_admin/.idea/shop_admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_admin/.idea/shop_admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_admin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_admin/shop_admin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_admin/shop_admin/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_admin/manage.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_admin/user/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shop_admin/main/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop_admin/user/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,9 +864,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="640" />
+    <option name="x" value="265" />
+    <option name="y" value="52" />
+    <option name="width" value="1776" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -48,7 +890,27 @@
               <item name="Dog-Eyes" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dog-Eyes" type="462c0819:PsiDirectoryNode" />
               <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dog-Eyes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dog-Eyes" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dog-Eyes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dog-Eyes" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Administrator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dog-Eyes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dog-Eyes" type="462c0819:PsiDirectoryNode" />
+              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -62,6 +924,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/shop_admin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -92,28 +955,28 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="DB Browser" />
-      <window_info anchor="bottom" id="DB Execution Console" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="DB Browser" order="2" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32917964" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +984,31 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/shop_admin/user/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_admin/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_admin/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop_admin/main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
