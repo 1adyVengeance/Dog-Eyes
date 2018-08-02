@@ -104,7 +104,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="65" />
     <option name="y" value="350" />
     <option name="width" value="1776" />
@@ -125,34 +125,13 @@
             <path>
               <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="Administrator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Administrator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,7 +204,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="2" />
