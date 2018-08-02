@@ -7,11 +7,7 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from datetime import datetime
 
-<<<<<<< HEAD
-=======
-# from __future__ import unicode_literals
 
->>>>>>> yanghan
 from django.db import models
 
 
