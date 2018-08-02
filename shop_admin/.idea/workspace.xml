@@ -45,10 +45,10 @@
         </entry>
       </file>
       <file leaf-file-name="lijiewei_test.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/Administrator/lijiewei_test.html">
+        <entry file="file://$PROJECT_DIR$/templates/Administrator/lijiewei_test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="120">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -91,6 +91,7 @@
         <option value="$PROJECT_DIR$/shop_admin/settings.py" />
         <option value="$PROJECT_DIR$/user/models.py" />
         <option value="$PROJECT_DIR$/static/Administrator/lijiewei_test.html" />
+        <option value="$PROJECT_DIR$/templates/Administrator/lijiewei_test.html" />
       </list>
     </option>
   </component>
@@ -103,7 +104,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="350" />
     <option name="width" value="1776" />
@@ -130,6 +131,12 @@
               <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Administrator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop_admin" type="b2602c69:ProjectViewProjectNode" />
@@ -219,7 +226,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="2" />
@@ -366,6 +372,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Administrator/lijiewei_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
