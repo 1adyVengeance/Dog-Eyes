@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-def hello(request):
-    hello1 = 'helo'
-    return hello1
+
+def user_index(request):
+    if request.method == 'GET':
+        return render(request,'User/index.html')

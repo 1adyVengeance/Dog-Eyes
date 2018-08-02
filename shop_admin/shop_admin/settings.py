@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'user',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -78,16 +79,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db_shop_admin',
-        'USER': 'root',
-<<<<<<< HEAD
+        'USER': 'LJW',
         'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
+        'HOST': '10.7.152.72',
         'PORT': '3306',
-=======
-        'POST': 3306,
-        'HOST': 'localhost',
-        'PASSWORD': '123456',
->>>>>>> master
+
     }
 }
 
