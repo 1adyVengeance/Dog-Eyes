@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'user/',include('user.urls',namespace='user')),
     url(r'material/',include('material.urls',namespace='material')),
+    url(r'admin_info/',include('admin_info.urls',namespace='admin_info')),
 
 ]
