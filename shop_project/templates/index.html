@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模拟器</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .input_box {
+            width: 40px;
+        }
+        .input_box1 {
+            width: 120px;
+        }
+        #api input {
+            width: 400px;
+        }
+        * a {
+            text-decoration: none;
+        }
+        #confirm {
+            margin: 20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="price">
+        <label>输入价格区间</label>
+        <input class='input_box' type="text">
+        <span>-</span>
+        <input class='input_box' type="text">
+        <a href="javascript:void(0)" class="clear">清空</a>
+    </div>
+    <div id="date">
+        <label>输入日期区间</label>
+        <input class='input_box1' type="date">
+        <span>-</span>
+        <input class='input_box1' type="date">
+        <a href="javascript:void(0)" class="clear">清空</a>
+    </div>
+    <div id="num">
+        <label>输入商品个数</label>
+        <input class='input_box' type="text">
+        <a href="javascript:void(0)" class="clear">清空</a>
+    </div>
+    <a href="javascript:void(0)" id="confirm">确定</a>
+    <div id="api">
+        <label>API</label>
+        <input type="text">
+    </div>
+</body>
+
+<script src="/static/js/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('#confirm').on('click', function() {
+            var str0 = location.href + 'api/' +
+                $('#price input').val() + '/'+
+                $('#price span').next().val() + '/'+
+                $('#date input').val() + '/'+
+                $('#date span').next().val() + '/'+
+                $('#num input').val() + '/';
+
+            $('#api input').val(str0)
+        });
+
+        $('.clear').on('click', function(evt) {
+            $(evt.target).parent().children('input').val('')
+        })
+    })
+</script>
+</html>
