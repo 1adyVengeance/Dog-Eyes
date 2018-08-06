@@ -6,6 +6,16 @@ from main.models import AdminInfo, AdminRole, AdminPower
 # Create your views here.
 
 
+def get_admins(request):
+    if request.method == 'GET':
+        return render(request,'Admin/administrator.html')
+
+
+def get_admin_info(request):
+    if request.method == 'GET':
+        return render(request,'Admin/admin_info.html')
+
+
 def show_all_admin(request):
     """
     展示所有的管理员
@@ -68,13 +78,13 @@ def change_admin_info(request):
         role_id = request.POST.get('role_id')
         name = request.POST.get('name')
         leader_id = request.POST.get('leader_id')
-        is_delete = request.POST.get('is_delete')
+        # is_delete = request.POST.get('is_delete')
         sex = request.POST.get('sex')
         age = request.POST.get('age')
         phone_num = request.POST.get('phone_num')
         email = request.POST.get('email')
 
-        if not all([name, is_delete, sex, phone_num]):
+        if not all([name, sex, phone_num]):
             data = {'code': 1004, 'msg': '请填写完整必填信息'}
             return JsonResponse(data=data)
         # admin_id有值，更改，否则新增
@@ -83,7 +93,6 @@ def change_admin_info(request):
             admin.admin_role_id = role_id
             admin.name = name
             admin.leader_id = leader_id
-            admin.is_delete = is_delete
             admin.sex = sex
             admin.age = age
             admin.phone_num = phone_num
@@ -93,6 +102,7 @@ def change_admin_info(request):
             return JsonResponse(data=data)
         # 新增默认密码
         password = '123456'
+        is_delete = 0
         new_admin = AdminInfo(
             admin_role_id=role_id,
             leader_id=leader_id,
@@ -106,6 +116,36 @@ def change_admin_info(request):
         )
         new_admin.save()
         data = {'code': 200, 'msg': '保存成功'}
+        return JsonResponse(data=data)
+
+
+def change_admin_status(request):
+    if request.method == 'POST':
+        admin_id = request.POST.get('id')
+        is_delete = request.POST.get('is_delete')
+        admin = AdminInfo.objects.filter(admin_id=admin_id).first()
+        admin.is_delete = is_delete
+        admin.save()
+        data = {'code': 200, 'msg': '修改成功'}
+        return JsonResponse(data=data)
+
+
+def change_admin_passwd(request):
+    if request.method == 'POST':
+        id = request.POST.get('id')
+        old_passwd = request.POST.get('old_passwd')
+        new_passwd = request.POST.get('new_passwd')
+        c_mew_paswd = request.POST.get('c_mew_paswd')
+        if new_passwd != c_mew_paswd:
+            data = {'code': 1006, 'msg': '新密码不一致'}
+            return JsonResponse(data=data)
+        admin = AdminInfo.objects.filter(admin_id=id).first()
+        if admin.password != old_passwd:
+            data = {'code': 1007, 'msg': '原密码不正确'}
+            return JsonResponse(data=data)
+        admin.password = new_passwd
+        admin.save()
+        data = {'code': 200, 'msg': '修改成功'}
         return JsonResponse(data=data)
 
 

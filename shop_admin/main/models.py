@@ -278,7 +278,7 @@ class GoodsType(models.Model):
     """
     goods_type_id = models.AutoField(primary_key=True)  # id
     name = models.CharField(max_length=64)  # 分类名
-
+    store_info = models.ForeignKey('StoreInfo', blank=True, null=True)
 
     class Meta:
         managed = False
