@@ -7,7 +7,6 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from datetime import datetime
 
-
 from django.db import models
 
 
@@ -25,13 +24,14 @@ class AdminHandleLog(models.Model):
         db_table = 'admin_handle_log'
 
     def to_dict(self):
-        data={
-            'id':self.admin_hadle_log_id,
-            'admin_id':self.admin_id,
-            'handel_time':self.handle_time,
-            'event':self.event
+        data = {
+            'id': self.admin_hadle_log_id,
+            'admin_id': self.admin_id,
+            'handel_time': self.handle_time,
+            'event': self.event
         }
         return data
+
 
 class AdminInfo(models.Model):
     """
@@ -44,7 +44,7 @@ class AdminInfo(models.Model):
     create_time = models.DateTimeField(auto_now_add=datetime.now())  # 创建时间
     is_delete = models.IntegerField(default=0)  # 是否禁用 0不禁用   1禁用
     password = models.CharField(max_length=128)  # 密码
-    last_time = models.DateTimeField(auto_now_add=datetime.now(),blank=True, null=True)  # 最后登录时间
+    last_time = models.DateTimeField(auto_now_add=datetime.now(), blank=True, null=True)  # 最后登录时间
     sex = models.IntegerField(default=1)  # 性别 0 女   1 男
     age = models.IntegerField(blank=True, null=True)  # 年龄
     phone_num = models.CharField(max_length=11)  # 手机号
@@ -55,20 +55,21 @@ class AdminInfo(models.Model):
         db_table = 'admin_info'
 
     def to_dict(self):
-        data={
-            'id':self.admin_id,
-            'role_id':self.admin_role_id,
-            'name':self.name,
-            'leader_id':self.leader_id,
-            'create_time':self.create_time,
-            'is_delete':self.is_delete,
-            'last_time':self.last_time,
-            'sex':self.sex,
-            'age':self.age,
-            'phone_num':self.phone_num,
-            'email':self.email
+        data = {
+            'id': self.admin_id,
+            'role_id': self.admin_role_id,
+            'name': self.name,
+            'leader_id': self.leader_id,
+            'create_time': self.create_time,
+            'is_delete': self.is_delete,
+            'last_time': self.last_time,
+            'sex': self.sex,
+            'age': self.age,
+            'phone_num': self.phone_num,
+            'email': self.email
         }
         return data
+
 
 class AdminLoginLog(models.Model):
     """
@@ -84,11 +85,11 @@ class AdminLoginLog(models.Model):
         db_table = 'admin_login_log'
 
     def to_dict(self):
-        data={
-            'id':self.admin_login_id,
-            'admin_id':self.admin_id,
-            'login_time':self.login_ip,
-            'login_ip':self.login_ip
+        data = {
+            'id': self.admin_login_id,
+            'admin_id': self.admin_id,
+            'login_time': self.login_ip,
+            'login_ip': self.login_ip
         }
         return data
 
@@ -98,7 +99,7 @@ class AdminPower(models.Model):
     管理员权限
     """
     admin_power_id = models.AutoField(primary_key=True)  # id
-    name = models.CharField(max_length=64) # 权限名
+    name = models.CharField(max_length=64)  # 权限名
     description = models.CharField(max_length=256)  # 描述
     admin_role = models.ManyToManyField('AdminRole', through='Relationship23')  # 角色id
 
@@ -107,12 +108,13 @@ class AdminPower(models.Model):
         db_table = 'admin_power'
 
     def to_dict(self):
-        data={
-            'id':self.admin_power_id,
-            'name':self.name,
-            'description':self.description,
+        data = {
+            'id': self.admin_power_id,
+            'name': self.name,
+            'description': self.description,
         }
         return data
+
 
 class AdminRole(models.Model):
     """
@@ -121,7 +123,7 @@ class AdminRole(models.Model):
     admin_role_id = models.AutoField(primary_key=True)  # id
     name = models.CharField(max_length=64)  # 角色名
     is_delete = models.IntegerField(default=0)  # 是否禁用 0 否   1 禁用
-    create_time = models.DateTimeField(auto_now_add=datetime.now()) # 创建日期
+    create_time = models.DateTimeField(auto_now_add=datetime.now())  # 创建日期
     description = models.CharField(max_length=256)  # 描述
 
     class Meta:
@@ -130,14 +132,15 @@ class AdminRole(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.admin_role_id,
-            'name':self.name,
-            'is_delete':self.is_delete,
-            'create_time':self.create_time,
-            'description':self.description,
-            'powers':[i.name for i in self.adminpower_set.all()]
+            'id': self.admin_role_id,
+            'name': self.name,
+            'is_delete': self.is_delete,
+            'create_time': self.create_time,
+            'description': self.description,
+            'powers': [i.name for i in self.adminpower_set.all()]
         }
         return data
+
 
 class AmountOfMaterial(models.Model):
     """
@@ -153,11 +156,11 @@ class AmountOfMaterial(models.Model):
         db_table = 'amount_of_material'
 
     def to_dict(self):
-        data={
-            'id':self.amount_id,
-            'material_id':self.material_info.material_info_id,
-            'time':self.time,
-            'amount_of_use':self.amount_of_use
+        data = {
+            'id': self.amount_id,
+            'material_id': self.material_info.material_info_id,
+            'time': self.time,
+            'amount_of_use': self.amount_of_use
         }
         return data
 
@@ -177,12 +180,13 @@ class EmpHandleLog(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.emp_handle_log_id,
-            'emp_id':self.emp_id,
-            'handle_time':self.handle_time,
-            'event':self.event
+            'id': self.emp_handle_log_id,
+            'emp_id': self.emp_id,
+            'handle_time': self.handle_time,
+            'event': self.event
         }
         return data
+
 
 class EmpInfo(models.Model):
     """
@@ -208,18 +212,18 @@ class EmpInfo(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.emp_id,
-            'store_name':self.store_info.name,
-            'role_name':self.store_role.name,
-            'name':self.name,
-            'emp_no':self.emp_no,
-            'sex':self.sex,
-            'age':self.age,
-            'join_time':self.join_time,
-            'work_status':self.work_status,
-            'salary':self.salary,
-            'subsidy':self.subsidy,
-            'work_time':self.work_time,
+            'id': self.emp_id,
+            'store_name': self.store_info.name,
+            'role_name': self.store_role.name,
+            'name': self.name,
+            'emp_no': self.emp_no,
+            'sex': self.sex,
+            'age': self.age,
+            'join_time': self.join_time,
+            'work_status': self.work_status,
+            'salary': self.salary,
+            'subsidy': self.subsidy,
+            'work_time': self.work_time,
         }
         return data
 
@@ -240,13 +244,14 @@ class EmpLoginLog(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.emp_login_id,
-            'merchant_name':self.merchant.name,
-            'emp_name':self.emp.name,
-            'longin_time':self.longin_time,
-            'login_ip':self.login_ip
+            'id': self.emp_login_id,
+            'merchant_name': self.merchant.name,
+            'emp_name': self.emp.name,
+            'longin_time': self.longin_time,
+            'login_ip': self.login_ip
         }
         return data
+
 
 class GoodsInfo(models.Model):
     """
@@ -264,13 +269,14 @@ class GoodsInfo(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.goods_id,
-            'store_name':self.store_info.name,
-            'type_name':self.goods_type.name,
-            'name':self.name,
-            'price':self.price
+            'id': self.goods_id,
+            'store_name': self.store_info.name,
+            'type_name': self.goods_type.name,
+            'name': self.name,
+            'price': self.price
         }
         return data
+
 
 class GoodsType(models.Model):
     """
@@ -279,17 +285,17 @@ class GoodsType(models.Model):
     goods_type_id = models.AutoField(primary_key=True)  # id
     name = models.CharField(max_length=64)  # 分类名
 
-
     class Meta:
         managed = False
         db_table = 'goods_type'
 
     def to_dict(self):
         data = {
-            'id':self.goods_type_id,
-            'name':self.name
+            'id': self.goods_type_id,
+            'name': self.name
         }
         return data
+
 
 class MaterialInfo(models.Model):
     """
@@ -305,11 +311,12 @@ class MaterialInfo(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.material_info_id,
-            'type_name':self.material_type.name,
-            'name':self.name
+            'id': self.material_info_id,
+            'type_name': self.material_type.name,
+            'name': self.name
         }
         return data
+
 
 class MaterialType(models.Model):
     """
@@ -328,14 +335,15 @@ class MaterialType(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.material_type_id,
-            'merchant_name':self.materialinfo_set.name,
-            'name':self.name,
-            'create_time':self.create_time,
-            'emp_id':self.emp_id,
-            'is_delete':self.is_delete
+            'id': self.material_type_id,
+            'merchant_name': self.materialinfo_set.name,
+            'name': self.name,
+            'create_time': self.create_time,
+            'emp_id': self.emp_id,
+            'is_delete': self.is_delete
         }
         return data
+
 
 class MerchantInfo(models.Model):
     """
@@ -356,15 +364,16 @@ class MerchantInfo(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.merchant_id,
-            'name':self.name,
-            'sex':self.sex,
-            'icon':self.icon,
-            'email':self.email,
-            'phone_number':self.phone_number,
-            'address':self.address
+            'id': self.merchant_id,
+            'name': self.name,
+            'sex': self.sex,
+            'icon': self.icon,
+            'email': self.email,
+            'phone_number': self.phone_number,
+            'address': self.address
         }
         return data
+
 
 class Recipe(models.Model):
     """
@@ -382,13 +391,14 @@ class Recipe(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.recipe_id,
-            'goods_name':self.goods.name,
-            'material_name':self.material_info.name,
-            'need_count':self.need_count,
-            'unit':self.unit
+            'id': self.recipe_id,
+            'goods_name': self.goods.name,
+            'material_name': self.material_info.name,
+            'need_count': self.need_count,
+            'unit': self.unit
         }
         return data
+
 
 class Relationship14(models.Model):
     """
@@ -434,7 +444,7 @@ class SimulatorData(models.Model):
     模拟器数据
     """
     simulator_data_id = models.AutoField(primary_key=True)  # id
-    goods_id = models.IntegerField(null=True)  #  商品id （店员录入）
+    goods_id = models.IntegerField(null=True)  # 商品id （店员录入）
     name = models.CharField(max_length=64)  # 商品名称
     score = models.FloatField()  # 评分
     place = models.CharField(max_length=128)  # 售出地区
@@ -452,20 +462,21 @@ class SimulatorData(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.simulator_data_id,
-            'goods_id':self.goods_id,
-            'name':self.name,
-            'score':self.score,
-            'place':self.place,
-            'sole_time':self.sole_time,
-            'type_goods':self.type_goods,
-            'type_taste':self.type_taste,
-            't_price':self.t_price,
-            'create_time':self.create_time,
-            'update_time':self.update_time,
-            'merchant_name':self.merchant_name
+            'id': self.simulator_data_id,
+            'goods_id': self.goods_id,
+            'name': self.name,
+            'score': self.score,
+            'place': self.place,
+            'sole_time': self.sole_time,
+            'type_goods': self.type_goods,
+            'type_taste': self.type_taste,
+            't_price': self.t_price,
+            'create_time': self.create_time,
+            'update_time': self.update_time,
+            'merchant_name': self.merchant_name
         }
         return data
+
 
 class StoreInfo(models.Model):
     """
@@ -482,12 +493,13 @@ class StoreInfo(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.store_info_id,
-            'merchant_name':self.merchant.name,
-            'name':self.name,
-            'address':self.address
+            'id': self.store_info_id,
+            'merchant_name': self.merchant.name,
+            'name': self.name,
+            'address': self.address
         }
         return data
+
 
 class StorePower(models.Model):
     """
@@ -503,8 +515,8 @@ class StorePower(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.store_power_id,
-            'name':self.name
+            'id': self.store_power_id,
+            'name': self.name
         }
         return data
 
@@ -516,18 +528,18 @@ class StoreRole(models.Model):
     store_role_id = models.AutoField(primary_key=True)  # id
     name = models.CharField(max_length=64)  # 权利名
 
-
     class Meta:
         managed = False
         db_table = 'store_role'
 
     def to_dict(self):
         data = {
-            'id':self.store_role_id,
-            'name':self.name,
-            'powers':[i.name for i in self.storepower_set.all()]
+            'id': self.store_role_id,
+            'name': self.name,
+            'powers': [i.name for i in self.storepower_set.all()]
         }
         return data
+
 
 class TasteType(models.Model):
     """
@@ -547,12 +559,12 @@ class TasteType(models.Model):
 
     def to_dict(self):
         data = {
-            'id':self.taste_type_id,
-            'taste':self.taste,
-            'sales':self.sales,
-            'score':self.score,
-            'create_time':self.create_time,
-            'update_time':self.update_time,
-            'goods_names':[i.name for i in self.goods_info.all()]
+            'id': self.taste_type_id,
+            'taste': self.taste,
+            'sales': self.sales,
+            'score': self.score,
+            'create_time': self.create_time,
+            'update_time': self.update_time,
+            'goods_names': [i.name for i in self.goods_info.all()]
         }
         return data

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'main',
+    'admin_user'
 ]
 
 MIDDLEWARE = [
@@ -79,11 +80,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db_shop_admin',
-        'USER': 'LJW',
+        'USER': 'PWT',
         'PASSWORD': '123456',
         'HOST': '10.7.152.72',
         'PORT': '3306',
-
     }
 }
 
