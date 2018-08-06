@@ -11,11 +11,16 @@ def home():
     return render_template('index.html')
 
 
-@api_blueprint.route('/api/<price_low>/<price_high>/<date_low>/<date_high>/<num>/')
-def get_api(price_low, price_high, date_low, date_high, num):
+@api_blueprint.route('/api/<price_low>/<price_high>/<date_low>/<date_high>/<num>/<t_num>/')
+def get_api(price_low, price_high, date_low, date_high, num, t_num):
     if request.method == 'GET':
 
         num = int(num)
+        t_num = int(t_num)
+
+        # 商品种类必须大于等于 1
+        if t_num < 1:
+            return jsonify('Good type must more than one')
 
         # 单次获取商品数不得大于 1 万
         if num > 10000:
@@ -49,7 +54,7 @@ def get_api(price_low, price_high, date_low, date_high, num):
 
         goods = []
         for i in range(num):
-            goods.append(good_maker(i, price_region, date_region))
+            goods.append(good_maker(t_num, price_region, date_region))
 
         ctx = {
             'code': 200,

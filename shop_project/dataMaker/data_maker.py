@@ -91,16 +91,16 @@ def region_maker():
     return places[randint(0, len(places))-1]
 
 
-def good_maker(good_num,  price_region, time_region):
+def good_maker(t_num,  price_region, time_region):
     """
     create a good
-    :param good_num: the number of the good
+    :param t_num: the type num of the good
     :param price_region: the price region of the good
     :param time_region: the date region of the good
     :return: a dict good
     """
     good_dict = {
-        'name': '商品编号%s' % good_num,
+        'name': '商品编号%s' % randint(1, t_num),
         'price': price_maker(price_region[0], price_region[1]),
         'score': score_maker(),
         'place': region_maker(),

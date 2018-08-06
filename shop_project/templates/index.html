@@ -42,6 +42,11 @@
         <input class='input_box' type="text">
         <a href="javascript:void(0)" class="clear">清空</a>
     </div>
+    <div id="t_num">
+        <label>输入商品种类数</label>
+        <input class='input_box' type="text">
+        <a href="javascript:void(0)" class="clear">清空</a>
+    </div>
     <a href="javascript:void(0)" id="confirm">确定</a>
     <div id="api">
         <label>API</label>
@@ -55,10 +60,11 @@
         $('#confirm').on('click', function() {
             var str0 = location.href + 'api/' +
                 $('#price input').val() + '/'+
-                $('#price span').next().val() + '/'+
+                $('#price span').next().val() + '/' +
                 $('#date input').val() + '/'+
-                $('#date span').next().val() + '/'+
-                $('#num input').val() + '/';
+                $('#date span').next().val() + '/' +
+                $('#num input').val() + '/' +
+                $('#t_num input').val() + '/';
 
             $('#api input').val(str0)
         });
