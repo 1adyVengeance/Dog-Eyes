@@ -1,9 +1,10 @@
+import pymysql
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse
 
 from admin_user.functions import get_check_code_info
-from main import models
+from main import models, code_status
 
 
 def check_code(request):
@@ -71,28 +72,6 @@ def index(request):
             return HttpResponseRedirect(reverse('admin_user:login'))
 
 
-def products_list(request):
-    """
-    产品清单
-    :param request:
-    :return:
-    """
-    if request.method == 'GET':
-        request.session['emp_id'] = 1
-        if request.session.get('emp_id'):
-            emp_id = request.session.get('emp_id')
-            store_info_id = models.EmpInfo.objects.filter(emp_id=emp_id).first().store_info_id
-            goods_info_list = {goods.name: goods.price for goods in
-                               models.GoodsInfo.objects.filter(store_info_id=store_info_id).all()}
-            data = {
-                'code': 200,
-                'msg': '请求成功',
-                'result': goods_info_list
-            }
-            return JsonResponse(data)
-        else:
-            data = {
-                'code': 301,
-                'msg': '请求失败'
-            }
-            return JsonResponse(data)
+
+
+

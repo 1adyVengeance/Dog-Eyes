@@ -284,6 +284,7 @@ class GoodsType(models.Model):
     """
     goods_type_id = models.AutoField(primary_key=True)  # id
     name = models.CharField(max_length=64)  # 分类名
+    store_info = models.ForeignKey('StoreInfo', models.DO_NOTHING, blank=True, null=True)  # 商店id（外键）
 
     class Meta:
         managed = False
@@ -292,7 +293,8 @@ class GoodsType(models.Model):
     def to_dict(self):
         data = {
             'id': self.goods_type_id,
-            'name': self.name
+            'name': self.name,
+            'store_name': self.store_info.name
         }
         return data
 
