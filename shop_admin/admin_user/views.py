@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import pymysql
 from django.http import JsonResponse, HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, redirect
@@ -38,6 +40,10 @@ def login(request):
                 return HttpResponseRedirect(reverse('admin_user:login'))
             else:
                 msg = '登陆成功'
+                admin_id = user.admin_id
+                login_ip = request.META['REMOTE_ADDR']
+                login_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                models.AdminLoginLog.objects.create(login_ip=login_ip, login_time=login_time, admin_id=admin_id)
                 request.session['is_login'] = 'true'
                 request.session['user'] = username
                 return HttpResponseRedirect(reverse('admin_user:index'))
@@ -70,6 +76,14 @@ def index(request):
             return render(request, 'Admin/index.html')
         else:
             return HttpResponseRedirect(reverse('admin_user:login'))
+
+
+def login_log(request):
+    """
+    登陆日志
+    :param request:
+    :return:
+    """
 
 
 

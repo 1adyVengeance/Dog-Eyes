@@ -1,6 +1,35 @@
+from datetime import datetime
+
 from django.http import JsonResponse
 
 from main import code_status, models
+
+
+def product_update(request):
+    """
+    修改商品信息
+    :param request:
+    :return:
+    """
+    request.session['emp_id'] = 1
+    if request.method == 'POST':
+        emp_id = request.session.get('emp_id')
+        store_info_id = request.POST.get('store_info_id')
+        goods_type_id = request.POST.get('goods_type_id')
+        name = request.POST.get('name')
+        price = request.POST.get('price')
+        goods_id = request.GET.get('goods_id')
+        try:
+            goods = models.GoodsInfo.objects.filter(goods_id=goods_id)
+            goods.update(store_info_id=store_info_id, goods_type_id=goods_type_id, name=name, price=price)
+            data = code_status.SUCCESS
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '修改商品{}信息'.format(name)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
+            return JsonResponse(data)
+        except:
+            data = code_status.DATABASE_ERROR
+            return JsonResponse(data)
 
 
 def products_list(request):
@@ -9,9 +38,9 @@ def products_list(request):
     :param request:
     :return:
     """
+    request.session['emp_id'] = 1
     if request.method == 'GET':
         # 查询商品清单
-        request.session['emp_id'] = 1
         if request.session.get('emp_id'):
             emp_id = request.session.get('emp_id')
             store_info_id = models.EmpInfo.objects.filter(emp_id=emp_id).first().store_info_id
@@ -23,6 +52,7 @@ def products_list(request):
 
     if request.method == 'POST':
         # 新增商品
+        emp_id = request.session.get('emp_id')
         store_info_id = request.POST.get('store_info_id')
         goods_type_id = request.POST.get('goods_type_id')
         name = request.POST.get('name')
@@ -32,6 +62,10 @@ def products_list(request):
             create = models.GoodsInfo.objects.create(store_info_id=store_info_id, goods_type_id=goods_type_id,
                                                      name=name, price=price)
             data = code_status.SUCCESS
+            create.save()
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '新增商品{}'.format(name)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
             return JsonResponse(data)
         except:
             data = code_status.DATABASE_ERROR
@@ -39,28 +73,40 @@ def products_list(request):
 
     if request.method == 'DELETE':
         # 删除商品
+        emp_id = request.session.get('emp_id')
         goods_id = request.GET.get('goods_id')
         goods = models.GoodsInfo.objects.filter(goods_id=goods_id)
         try:
             delete = goods.delete()
             data = code_status.SUCCESS
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '新增商品{}'.format(goods.first().name)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
             return JsonResponse(data)
         except:
             data = code_status.DATABASE_ERROR
             return JsonResponse(data)
 
-    if request.method == 'PATCH':
-        # 修改商品信息
-        store_info_id = request.POST.get('store_info_id')
-        goods_type_id = request.POST.get('goods_type_id')
-        name = request.POST.get('name')
-        price = request.POST.get('price')
-        goods_id = request.GET.get('goods_id')
-        goods = models.GoodsInfo.objects.filter(goods_id=goods_id)
+
+def goods_type_update(request):
+    """
+    修改分类信息
+    :param request:
+    :return:
+    """
+    request.session['emp_id'] = 1
+    if request.method == 'POST':
+        emp_id = request.session.get('emp_id')
+        goods_type_id = request.GET.get('goods_type_id')
+        new_name = request.POST.get('name')
         try:
-            updata = goods.update(store_info_id=store_info_id, goods_type_id=goods_type_id,
-                         name=name, price=price)
+            goods = models.GoodsType.objects.filter(goods_type_id=goods_type_id)
+            name = goods.first().name
+            goods.update(name=new_name)
             data = code_status.SUCCESS
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '修改分类{}为{}'.format(name, new_name)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
             return JsonResponse(data)
         except:
             data = code_status.DATABASE_ERROR
@@ -104,6 +150,9 @@ def goods_type(request):
         try:
             create = models.GoodsType.objects.create(store_info_id=store_info_id, name=name)
             data = code_status.SUCCESS
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '新增分类{}'.format(name)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
             return JsonResponse(data)
         except:
             data = code_status.DATABASE_ERROR
@@ -111,11 +160,15 @@ def goods_type(request):
 
     if request.method == 'DELETE':
         # 删除商品
+        emp_id = request.session.get('emp_id')
         goods_type_name = request.GET.get('name')
         goods = models.GoodsType.objects.filter(name=goods_type_name)
         try:
             delete = goods.delete()
             data = code_status.SUCCESS
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '删除分类{}'.format(goods_type_name)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
             return JsonResponse(data)
         except:
             data = code_status.DATABASE_ERROR
@@ -128,7 +181,10 @@ def recipe(request):
     :param request:
     :return:
     """
+    request.session['emp_id'] = 1
     if request.method == 'POST':
+        # 新增配方
+        emp_id = request.GET.get('emp_id')
         goods_id = request.GET.get('goods_id')
         material_info_id = request.POST.get('material_info_id')
         need_count = request.POST.get('need_count')
@@ -137,6 +193,11 @@ def recipe(request):
             create = models.Recipe.objects.create(goods_id=goods_id, material_info_id=material_info_id,
                                                   need_count=need_count, unit=unit)
             data = code_status.SUCCESS
+            create.save()
+            goods_name = models.GoodsInfo.objects.filter(goods_id=goods_id).first().name
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '新增{}的配方'.format(goods_name)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
             return JsonResponse(data)
         except:
             data = code_status.DATABASE_ERROR
@@ -144,17 +205,23 @@ def recipe(request):
 
     if request.method == 'DELETE':
         # 删除配方
+        emp_id = request.POST.get('emp_id')
         goods_id = request.GET.get('goods_id')
         recipe = models.Recipe.objects.filter(goods_id=goods_id).first()
         try:
-            delete = recipe.delete()
+            recipe.delete()
             data = code_status.SUCCESS
+            goods_name = models.GoodsInfo.objects.filter(goods_id=goods_id).first().name
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '删除{}的配方'.format(goods_name)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
             return JsonResponse(data)
         except:
             data = code_status.DATABASE_ERROR
             return JsonResponse(data)
 
     if request.method == 'GET':
+        # 查询配方
         goods_id = request.GET.get('goods_id')
         if goods_id:
             recipes = models.Recipe.objects.filter(goods_id=goods_id)
@@ -167,5 +234,35 @@ def recipe(request):
             recipe_info = [recipe.to_dict() for recipe in recipes]
             data = code_status.SUCCESS
             data['result'] = recipe_info
+            return JsonResponse(data)
+
+
+def recipe_update(request):
+    """
+    修改配方信息
+    :param request:
+    :return:
+    """
+    request.session['emp_id'] = 1
+    if request.method == 'POST':
+        emp_id = request.session.get('emp_id')
+        recipe_id = request.GET.get('recipe_id')
+        old_name = request.GET.get('name')
+        new_name = request.POST.get('name')
+        need_count = request.POST.get('need_count')
+        unit = request.POST.get('unit')
+        try:
+            # old_material = models.MaterialInfo.objects.filter(name=old_name)
+            new_models = models.MaterialInfo.objects.filter(name=new_name)
+            new_material_info_id = new_models.first().material_info_id
+            recipe = models.Recipe.objects.filter(recipe_id=recipe_id)
+            recipe.update(material_info_id=new_material_info_id, need_count=need_count)
+            data = code_status.SUCCESS
+            handle_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            event = '修改配方{}为{}{}{}'.format(old_name, new_name, need_count, unit)
+            models.EmpHandleLog.objects.create(emp_id=emp_id, handle_time=handle_time, event=event)
+            return JsonResponse(data)
+        except:
+            data = code_status.DATABASE_ERROR
             return JsonResponse(data)
 
