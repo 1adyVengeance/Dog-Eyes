@@ -286,6 +286,7 @@ class GoodsType(models.Model):
     name = models.CharField(max_length=64)  # 分类名
     store_info = models.ForeignKey('StoreInfo', models.DO_NOTHING, blank=True, null=True)  # 商店id（外键）
 
+
     class Meta:
         managed = False
         db_table = 'goods_type'
@@ -327,7 +328,7 @@ class MaterialType(models.Model):
     material_type_id = models.AutoField(primary_key=True)  # id
     merchant = models.ForeignKey('MerchantInfo', models.DO_NOTHING, blank=True, null=True)  # 商家id（外键）
     name = models.CharField(max_length=64)  # 分类名
-    create_time = models.DateTimeField()  # 创建时间
+    create_time = models.DateTimeField(auto_now_add=datetime.now())  # 创建时间
     emp_id = models.IntegerField()  # 创建人id
     is_delete = models.IntegerField(default=0)  # 是否禁用 0 否   1 禁用
 

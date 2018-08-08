@@ -22,4 +22,7 @@ urlpatterns = [
     url(r'^user/',include('user.urls',namespace='user')),
     url(r'^admin_user/', include('admin_user.urls', namespace='admin_user')),
     url(r'^product/', include('product.urls', namespace='product')),
+    url(r'user/',include('user.urls',namespace='user')),
+    url(r'material/',include('material.urls',namespace='material')),
+    url(r'admin_info/',include('admin_info.urls',namespace='admin_info')),
 ]
